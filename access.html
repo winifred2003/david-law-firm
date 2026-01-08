@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Attorney Profile | Harrison & Associates</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Access Page Styles */
+        .access-entry {
+            padding: 150px 0 100px;
+            background: linear-gradient(135deg, #1B365D, #0f243e);
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .entry-card {
+            background: #ffffff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(27, 54, 93, 0.15);
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .entry-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+        
+        .entry-card h2 {
+            color: #1B365D;
+            margin-bottom: 1rem;
+        }
+        
+        .code-input-wrapper {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        #accessCodeInput {
+            flex: 1;
+            padding: 15px;
+            font-size: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.5rem;
+            border: 2px solid #e1e5e9;
+            border-radius: 8px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        #accessCodeInput:focus {
+            outline: none;
+            border-color: #D4AF37;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+        }
+        
+        .status-message {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 4px;
+            font-weight: 500;
+            display: none;
+        }
+        
+        .status-message.error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            display: block;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 14px 32px;
+            border-radius: 4px;
+            font-weight: 500;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            font-size: 1rem;
+            background: #1B365D;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: #D4AF37;
+            color: #1B365D;
+        }
+        
+        .help-text {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e1e5e9;
+        }
+        
+        @media (max-width: 768px) {
+            .code-input-wrapper {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/da.jpg" alt="Logo">
+                        <span>Harrison & Associates</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="access-entry">
+        <div class="container">
+            <div class="entry-card">
+                <div class="entry-icon">🔐</div>
+                <h2>Enter 6-Digit Access Code</h2>
+                <p>Enter the code provided to view attorney profile</p>
+                
+                <!-- THE FORM THAT ACTUALLY WORKS -->
+                <form id="codeEntryForm">
+                    <div class="code-input-wrapper">
+                        <input type="text" 
+                               id="accessCodeInput" 
+                               placeholder="000000" 
+                               maxlength="6" 
+                               pattern="[0-9]{6}" 
+                               required>
+                        <button type="submit" class="btn">Enter Code</button>
+                    </div>
+                </form>
+                
+                <div class="status-message" id="statusMessage"></div>
+                
+                <div class="help-text">
+                    <p>Don't have a code?</p>
+                    <p><a href="contact.html">Request Access →</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT THAT MAKES IT WORK -->
+    <script>
+        // VALID CODES - You can change these
+        const VALID_CODES = ['982231', '123456', '654321', '789012'];
+        
+        document.getElementById('codeEntryForm').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevent page reload
+            
+            const enteredCode = document.getElementById('accessCodeInput').value;
+            const statusMsg = document.getElementById('statusMessage');
+            
+            // Check if code is valid
+            if (VALID_CODES.includes(enteredCode)) {
+                // Redirect to profile page with code
+                window.location.href = `profile.html?code=${enteredCode}`;
+            } else {
+                // Show error
+                statusMsg.textContent = '❌ Invalid code. Try again or request one.';
+                statusMsg.className = 'status-message error';
+                document.getElementById('accessCodeInput').value = '';
+                document.getElementById('accessCodeInput').focus();
+            }
+        });
+    </script>
+</body>
+</html>

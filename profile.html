@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attorney David Harrison | Complete Profile</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        /* Comprehensive Profile Styles */
+        .attorney-profile { padding: 100px 0; background: #f8f9fa; }
+        .profile-grid { display: grid; grid-template-columns: 350px 1fr; gap: 3rem; max-width: 1200px; margin: 0 auto; }
+        .profile-sidebar { background: #ffffff; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(27, 54, 93, 0.1); height: fit-content; position: sticky; top: 120px; }
+        .profile-image img { width: 100%; border-radius: 8px; margin-bottom: 1.5rem; }
+        .qr-contact { text-align: center; padding: 1.5rem; background: #f8f9fa; border-radius: 8px; margin: 1rem 0; }
+        .qr-contact img { width: 120px; height: 120px; margin-bottom: 0.5rem; }
+        .qr-contact p { font-size: 0.875rem; color: #7a7a7a; }
+        .profile-main { background: #ffffff; padding: 3rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(27, 54, 93, 0.1); }
+        .profile-header { border-bottom: 2px solid #D4AF37; padding-bottom: 1.5rem; margin-bottom: 2rem; }
+        .profile-header h1 { color: #1B365D; margin-bottom: 0.5rem; }
+        .profile-header h2 { color: #D4AF37; font-size: 1.5rem; }
+        .practice-years { background: linear-gradient(135deg, #1B365D, #0f243e); color: white; padding: 1rem; border-radius: 8px; text-align: center; margin: 1rem 0; }
+        .practice-years .years { font-size: 2.5rem; font-weight: 700; display: block; }
+        .detail-section { margin-bottom: 2.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid #e1e5e9; }
+        .detail-section h3 { color: #1B365D; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .detail-section ul { list-style: none; }
+        .detail-section li { padding: 0.5rem 0; color: #4a4a4a; }
+        .detail-section strong { color: #1B365D; }
+        .practice-areas-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .practice-area { background: #f8f9fa; padding: 1rem; border-radius: 6px; border-left: 4px solid #D4AF37; }
+        .practice-area h4 { color: #1B365D; margin-bottom: 0.5rem; }
+        .practice-area p { font-size: 0.875rem; color: #7a7a7a; }
+        .professional-fees { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #D4AF37; }
+        .fee-item { display: flex; justify-content: space-between; padding: 0.5rem 0; }
+        .fee-item strong { color: #1B365D; }
+        .confidential-notice { background: linear-gradient(135deg, #fff3cd, #ffeaa7); padding: 1.5rem; border-radius: 8px; border-left: 4px solid #D4AF37; margin-top: 2rem; }
+        .confidential-notice h4 { color: #1B365D; margin-bottom: 0.5rem; }
+        .map-container { height: 300px; border-radius: 8px; overflow: hidden; margin-top: 1rem; }
+        .office-address { background: #f8f9fa; padding: 1.5rem; border-radius: 8px; }
+        @media (max-width: 768px) { 
+            .profile-grid { grid-template-columns: 1fr; } 
+            .profile-sidebar { position: static; }
+        }
+    </style>
+</head>
+<body>
+      <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/da.jpg" alt="Harrison & Associates Logo">
+                        <span>Harrison & Associates</span>
+                    </a>
+                </div>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="tel:+13132138960" class="btn btn-outline">Call Us</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+        <section class="attorney-profile">
+            <div class="container">
+                <div class="profile-grid">
+                    <!-- SIDEBAR - ATTORNEY QUICK INFO -->
+                    <aside class="profile-sidebar">
+                        <div class="profile-image">
+                            <img src="images/davi.jpg" alt="David Harrison">
+                        </div>
+                        
+                        <div class="practice-years">
+                            <span class="years">15+</span>
+                            Years in Practice
+                        </div>
+                        
+                        <div class="qr-contact">
+                            <h4>Quick Contact</h4>
+                            <img src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&data=Tel:+13132138960" alt="QR Code">
+                            <p>Scan to call attorney directly</p>
+                            <a href="tel:+13132138960" style="display: block; margin-top: 0.5rem; color: #1B365D; font-weight: 600;">+1 (313) 213-8960</a>
+                        </div>
+
+                        <div class="office-address">
+                            <h4>📍 Law Office Address</h4>
+                            <address>
+                                <strong>Harrison & Associates</strong><br>
+                                531 N Dunham Ave<br>
+                                Arlington, WA 98223<br>
+                                United States<br>
+                                <a href="https://goo.gl/maps/123456" target="_blank">View on Google Maps</a>
+                            </address>
+                        </div>
+
+                        <div class="office-hours">
+                            <h4>🕐 Office Hours</h4>
+                            <ul style="list-style: none; font-size: 0.875rem;">
+                                <li>Mon-Fri: 9:00 AM - 6:00 PM</li>
+                                <li>Saturday: By appointment</li>
+                                <li>Sunday: Closed</li>
+                                <li>Emergency: 24/7 for clients</li>
+                            </ul>
+                        </div>
+                    </aside>
+
+                    <!-- MAIN PROFILE CONTENT -->
+                    <main class="profile-main">
+                        <div class="profile-header">
+                            <h1>David Harrison, J.D.</h1>
+                            <h2>Managing Attorney & Founder</h2>
+                        </div>
+
+                        <!-- PROFESSIONAL SUMMARY -->
+                        <div class="detail-section">
+                            <h3>🎓 Professional Summary</h3>
+                            <p><strong>Years in Practice:</strong> 15+ years (since 2008)</p>
+                            <p><strong>Bar Admissions:</strong> Washington State, Michigan State</p>
+                            <p><strong>Practice Focus:</strong> Commercial Law, Corporate Transactions, Real Estate, Dispute Resolution</p>
+                            <p><strong>Education:</strong> J.D. University of Michigan Law School (2008) - Cum Laude</p>
+                            <p><strong>Undergraduate:</strong> B.A. Economics, University of Washington (2005)</p>
+                        </div>
+
+                        <!-- PRACTICE AREAS -->
+                        <div class="detail-section">
+                            <h3>⚖️ Practice Areas & Expertise</h3>
+                            <div class="practice-areas-grid">
+                                <div class="practice-area">
+                                    <h4>Commercial Law</h4>
+                                    <p>Business formation, contracts, compliance, transactions</p>
+                                </div>
+                                <div class="practice-area">
+                                    <h4>Corporate Transactions</h4>
+                                    <p>M&A, joint ventures, due diligence, restructuring</p>
+                                </div>
+                                <div class="practice-area">
+                                    <h4>Real Estate Law</h4>
+                                    <p>Property acquisition, leases, development, financing</p>
+                                </div>
+                                <div class="practice-area">
+                                    <h4>Dispute Resolution</h4>
+                                    <p>Litigation, arbitration, mediation, commercial disputes</p>
+                                </div>
+                                <div class="practice-area">
+                                    <h4>Employment Law</h4>
+                                    <p>Contracts, compliance, disputes, HR consulting</p>
+                                </div>
+                                <div class="practice-area">
+                                    <h4>Business Litigation</h4>
+                                    <p>Contract disputes, partnership conflicts, fraud claims</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BAR ADMISSIONS -->
+                        <div class="detail-section">
+                            <h3>📜 Bar Admissions & Certifications</h3>
+                            <ul>
+                                <li><strong>maryland Bar:</strong> Member #98223 (Active Status)</li>
+                                <li><strong>Maryland Bar:</strong> Member #54321 (Active Status)</li>
+                                <li><strong>U.S.A District Court - Eastern District of Washington:</strong> Admitted 2010</li>
+                                <li><strong>U.S.A District Court - Western District of Washington:</strong> Admitted 2011</li>
+                                <li><strong>U.S.A Court of Appeals - 9th Circuit:</strong> Admitted 2013</li>
+                                <li><strong>Certified Mediator:</strong> Washington Mediation Association</li>
+                            </ul>
+                        </div>
+
+                        <!-- PROFESSIONAL HISTORY -->
+                        <div class="detail-section">
+                            <h3>💼 Professional History</h3>
+                            <ul>
+                                <li><strong>2021 - Present:</strong> Managing Attorney, Harrison & Associates, Arlington WA</li>
+                                <li><strong>2016 - 2021:</strong> Senior Partner, Seattle Business Law Group</li>
+                                <li><strong>2010 - 2016:</strong> Associate Attorney, Pacific Northwest Law Firm</li>
+                                <li><strong>2008 - 2010:</strong> Law Clerk, U.S.A District Court (E.D. Wash.)</li>
+                            </ul>
+                        </div>
+
+                        <!-- MAJOR CASES & ACHIEVEMENTS -->
+                        <div class="detail-section">
+                            <h3>🏆 Notable Cases & Achievements</h3>
+                            <ul>
+                                <li>Successfully represented $50M+ commercial real estate transactions</li>
+                                <li>Secured favorable arbitration awards in 90% of business disputes</li>
+                                <li>Advised Fortune 500 companies on Washington state compliance</li>
+                                <li>Published author - Washington Business Law Review</li>
+                                <li>Featured speaker at Washington State Bar Annual Conference</li>
+                                <li>Mentor, University of Michigan Law School Alumni Network</li>
+                            </ul>
+                        </div>
+
+                        <!-- PROFESSIONAL MEMBERSHIPS -->
+                        <div class="detail-section">
+                            <h3>🤝 Professional Memberships</h3>
+                            <ul>
+                                <li>Washington State Bar Association (Business Law Section)</li>
+                                <li>Michigan State Bar Association</li>
+                                <li>American Bar Association (Litigation Section)</li>
+                                <li>Washington State Bar Association (Real Property Section)</li>
+                                <li>Arlington Chamber of Commerce</li>
+                                <li>Snohomish County Bar Association (Board Member)</li>
+                            </ul>
+                        </div>
+
+                        <!-- PRACTICE FEES -->
+                        <div class="detail-section">
+                            <h3>💰 Professional Fees</h3>
+                            <div class="professional-fees">
+                                <div class="fee-item">
+                                    <strong>Initial Consultation:</strong> <span>$350 (30 minutes)</span>
+                                </div>
+                                <div class="fee-item">
+                                    <strong>Hourly Rate:</strong> <span>$350 - $450</span>
+                                </div>
+                                <div class="fee-item">
+                                    <strong>Flat Fee (Standard Matters):</strong> <span>$2,500 - $10,000</span>
+                                </div>
+                                <div class="fee-item">
+                                    <strong>Contingency:</strong> <span>Available for select cases</span>
+                                </div>
+                                <div class="fee-item">
+                                    <strong>Retainer:</strong> <span>$5,000 - $25,000</span>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.875rem; margin-top: 1rem; color: #7a7a7a;">
+                                Rates may vary based on case complexity. Payment plans available.
+                            </p>
+                        </div>
+
+                        <!-- OFFICE DETAILS -->
+                        <div class="detail-section">
+                            <h3>🏢 Office Information</h3>
+                            <div class="office-details">
+                                <p><strong>Primary Office:</strong> Arlington, WA</p>
+                                <p><strong>Address:</strong> 531 N Dunham Ave, Arlington, WA 98223</p>
+                                <p><strong>Phone:</strong> +1 (313) 213-8960 (direct)</p>
+                                <p><strong>Email:</strong> Davidattorney2001@gmail.com</p>
+                                <p><strong>Secure Portal:</strong> Available for document sharing</p>
+                                
+                                <div class="map-container">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.123456789012!2d-122.1250!3d48.1987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54858c1234567890%3A0xabcdef1234567890!2s531%20N%20Dunham%20Ave%2C%20Arlington%2C%20WA%2098223!5e0!3m2!1sen!2sus!4v1234567890" 
+                                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PERSONAL STATEMENT -->
+                        <div class="detail-section">
+                            <h3>🎯 Attorney's Statement</h3>
+                            <p>
+                                With over 15 years of dedicated practice in business and commercial law, 
+                                I bring a wealth of experience to every client matter. My approach combines 
+                                thorough legal analysis with practical business solutions. I'm committed to 
+                                providing personalized, responsive service and achieving the best possible 
+                                outcomes for my clients.
+                            </p>
+                            <p>
+                                When you work with my firm, you work directly with me - not an associate. 
+                                Every client receives partner-level attention and expertise from day one.
+                            </p>
+                        </div>
+
+                        <!-- CONFIDENTIALITY NOTICE -->
+                        <div class="confidential-notice">
+                            <h4>🔒 CONFIDENTIAL ATTORNEY PROFILE</h4>
+                            <p>
+                                This profile contains sensitive professional and contact information. 
+                                It is provided exclusively to verified clients, referral sources, and 
+                                authorized parties. Unauthorized distribution or sharing is strictly 
+                                prohibited. All information is current as of 2024.
+                            </p>
+                            <p style="margin-top: 1rem;">
+                                <strong>Code Validity:</strong> Access codes expire after 30 days. 
+                                Contact our office for a new code if needed.
+                            </p>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ACCESS DENIED PAGE -->
+    <div id="accessDenied" style="display: none;">
+        <section class="access-denied">
+            <div class="container">
+                <div class="denied-card">
+                    <h2 style="color: #dc3545; margin-bottom: 1rem;">⚠️ Access Denied</h2>
+                    <p style="margin-bottom: 2rem;">You need a valid 6-digit access code to view this attorney profile.</p>
+                    <a href="access.html" class="btn btn-primary">Enter Access Code</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- PROTECTION SCRIPT -->
+    <script>
+        // MATCHING CODES FROM ACCESS PAGE
+        const VALID_CODES = ['982231', '123456', '654321', '789012'];
+        
+        // CHECK CODE WHEN PAGE LOADS
+        window.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            
+            if (code && VALID_CODES.includes(code)) {
+                // Show full profile
+                document.getElementById('profileWrapper').style.display = 'block';
+                document.title = 'Attorney David Harrison - Complete Professional Profile';
+            } else {
+                // Show access denied
+                document.getElementById('accessDenied').style.display = 'block';
+                document.title = 'Access Denied | Harrison & Associates';
+            }
+        });
+    </script>
+     <script src="js/main.js"></script>
+</body>
+</html>

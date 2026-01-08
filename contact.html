@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Harrison & Associates. Arlington, WA office. Schedule consultation or call +1 (313) 213-8960.">
+    <title>Contact Us | Harrison & Associates</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/da.jpg" alt="Harrison & Associates Logo">
+                        <span>Harrison & Associates</span>
+                    </a>
+                </div>
+                
+                <nav class="nav" id="mainNav">
+                    <ul class="nav-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                        <li><a href="tel:+13132138960" class="btn btn-outline">Call Us</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contact Harrison & Associates</h1>
+            <p>Arlington, WA office - Schedule your consultation today</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Schedule a Consultation</h2>
+                    <p class="form-description">Complete the form below and we'll respond within 24 hours.</p>
+                    
+                    <!-- FIXED: Single form tag with proper structure -->
+                    <form id="contactForm" class="contact-form" method="POST">
+                        <!-- FormSubmit.co hidden fields -->
+                        <input type="hidden" name="_subject" value="New Client Inquiry - Law Firm Website">
+                        <input type="hidden" name="_template" value="box">
+                        <input type="hidden" name="_autoresponse" value="Thank you for contacting Harrison & Associates. We will respond within 24 hours.">
+                        <input type="text" name="_honey" style="display:none"> <!-- Spam protection -->
+                        
+                        <!-- Visible form fields -->
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="commercial">Commercial Law</option>
+                                <option value="corporate">Corporate Transactions</option>
+                                <option value="realestate">Real Estate</option>
+                                <option value="dispute">Dispute Resolution</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="serviceError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Please describe your legal matter..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">I agree to the privacy policy and terms of service *</label>
+                            </div>
+                            <span class="error-message" id="privacyError"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                        
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                 <!-- Add this in the Contact Information section -->
+                <div class="info-card consultation-card">
+                     <div class="info-icon">🔐</div>
+                       <h3>Client Access</h3>
+                       <p>Verified clients can view full attorney credentials</p>
+                       <a href="access.html" class="btn btn-primary btn-full">Enter Access Code</a>
+                    </div>
+                <div class="contact-info-container">
+                    <div class="info-card">
+                        <div class="info-icon">📍</div>
+                        <h3>Office Location</h3>
+                        <address>
+                            Harrison & Associates<br>
+                            531 N Dunham Ave,<br>
+                            Arlington, WA 98223<br>
+                            United States of America
+                        </address>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📞</div>
+                        <h3>Phone, Email & WhatsApp</h3>
+                        <p><strong>Phone:</strong> <a href="tel:+13132138960">+1 (313) 213-8960</a></p>
+                        <p><strong>Email:</strong> <a href="mailto:Davidattorney2001@gmail.com">Davidattorney2001@gmail.com</a></p>
+                        <p><strong>Emergency:</strong> +1 (313) 213-8960 (24/7 for existing clients)</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">🕐</div>
+                        <h3>Office Hours</h3>
+                        <ul class="hours-list">
+                            <li>Monday - Friday: 9:00 - 18:00</li>
+                            <li>Saturday: By appointment</li>
+                            <li>Sunday: Closed</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">⚖️</div>
+                        <h3>Bar Admission</h3>
+                        <p><strong>Washington State Bar:</strong> Member in Good Standing</p>
+                        <p>Licensed to practice in Washington State</p>
+                    </div>
+                    
+                    <div class="info-card consultation-card">
+                        <div class="info-icon">💼</div>
+                        <h3>Initial Consultation</h3>
+                        <p>$350 for 30 minutes</p>
+                        <p>Fixed fee options available for standard matters</p>
+                        <a href="tel:+13132138960" class="btn btn-primary btn-full">Chat on WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Find Our Washington Office</h2>
+            <p>Located in Arlington, serving clients throughout Washington State</p>
+        </div>
+        <div class="map-container">
+            <!-- FIXED: Updated map coordinates for Arlington, WA -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.123456789012!2d-122.1250!3d48.1987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54858c1234567890%3A0xabcdef1234567890!2s531%20N%20Dunham%20Ave%2C%20Arlington%2C%20WA%2098223!5e0!3m2!1sen!2sus!4v1234567890" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Harrison & Associates</h4>
+                    <p class="footer-description">Premier Washington law firm providing expert commercial and corporate legal services.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About the Attorney</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>📍 531 N Dunham Ave, Arlington, WA 98223</li>
+                        <li>📞 <a href="tel:+13132138960">+1 (313) 213-8960</a></li>
+                        <li>✉️ <a href="mailto:Davidattorney2001@gmail.com">Davidattorney2001@gmail.com</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Office Hours</h4>
+                    <ul>
+                        <li>Monday - Friday: 9:00 - 18:00</li>
+                        <li>Saturday: By appointment</li>
+                        <li>Sunday: Closed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Harrison & Associates. All rights reserved.</p>
+                <p>Licensed to practice law in Washington State</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
